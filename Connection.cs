@@ -13,4 +13,22 @@ namespace FOSCheezy
             return ConfigurationManager.ConnectionStrings["cs"].ConnectionString;
         }
     }
+    public class Utils 
+    {
+        public static bool IsValidExtension(string fileName)
+        {
+            bool isValid = false;
+            string[] fileExtension = { ".jpg", ".jpeg", ".png" };
+            for (int i = 0; i <= fileExtension.Length - 1; i++)
+            {
+                if (fileName.Contains(fileExtension[i]))
+                {
+                    isValid = true;
+                    break;
+                }
+            }
+            return isValid;
+        }
+    }
+    
 }
