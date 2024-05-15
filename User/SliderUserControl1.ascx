@@ -8,8 +8,7 @@
                     <div class="row">
                         <div class="col-md-7 col-lg-6 ">
                             <div class="detail-box">
-                                <h1>Fast Food Restaurant
-        </h1>
+                                <h1>Eat With Your Heart Desire</h1>
                                 <p>
                                     Doloremque, itaque aperiam facilis rerum, commodi, temporibus sapiente ad mollitia laborum quam quisquam esse error unde. Tempora ex doloremque, labore, sunt repellat dolore, iste magni quos nihil ducimus libero ipsam.
        
@@ -28,8 +27,7 @@
                     <div class="row">
                         <div class="col-md-7 col-lg-6 ">
                             <div class="detail-box">
-                                <h1>Fast Food Restaurant
-        </h1>
+                                <h1>Food So Good, Guaranteed You'll Come 2nd Time</h1>
                                 <p>
                                     Doloremque, itaque aperiam facilis rerum, commodi, temporibus sapiente ad mollitia laborum quam quisquam esse error unde. Tempora ex doloremque, labore, sunt repellat dolore, iste magni quos nihil ducimus libero ipsam.
        
@@ -48,7 +46,7 @@
                     <div class="row">
                         <div class="col-md-7 col-lg-6 ">
                             <div class="detail-box">
-                                <h1>Fast Food Restaurant
+                                <h1>Now At Your DoorStep Via Our Own App
         </h1>
                                 <p>
                                     Doloremque, itaque aperiam facilis rerum, commodi, temporibus sapiente ad mollitia laborum quam quisquam esse error unde. Tempora ex doloremque, labore, sunt repellat dolore, iste magni quos nihil ducimus libero ipsam.
