@@ -178,7 +178,15 @@
     <Content Include="TemplateFiles\images\f9.png" />
     <Content Include="TemplateFiles\images\favicon.png" />
     <Content Include="TemplateFiles\images\hero-bg.jpg" />
+    <Content Include="TemplateFiles\images\logo.png" />
+    <Content Include="TemplateFiles\images\Member1.png" />
+    <Content Include="TemplateFiles\images\member2.png" />
+    <Content Include="TemplateFiles\images\member3.png" />
+    <Content Include="TemplateFiles\images\member4.png" />
+    <Content Include="TemplateFiles\images\member5.jpg" />
+    <Content Include="TemplateFiles\images\member6.jpg" />
     <Content Include="TemplateFiles\images\o1.jpg" />
+    <Content Include="TemplateFiles\images\o12.jpg" />
     <Content Include="TemplateFiles\images\o2.jpg" />
     <Content Include="TemplateFiles\js\bootstrap.bundle.min.js" />
     <Content Include="TemplateFiles\js\bootstrap.js" />
