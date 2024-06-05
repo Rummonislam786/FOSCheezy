@@ -31,6 +31,27 @@
     <!-- Style.css -->
     <link rel="stylesheet" type="text/css" href="../TemplateFiles/assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="../TemplateFiles/assets/css/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" type="text/css" href="../TemplateFiles/assets/Datatables/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" type="text/css" href="../TemplateFiles/assets/Datatables/css/responsive.bootstrap4.min.css">
+    <link rel="stylesheet" type="text/css" href="../TemplateFiles/assets/Datatables/css/icon-font.min.css">
+    <script type="text/javascript" src="../TemplateFiles/assets/js/jquery/jquery.min.js"></script>
+    
+
+
+
+    <script>
+        $(function () {
+            var url = window.location.href;
+
+            $("#navbarSupportedContent a").each(function () {
+                if (url == (this.href)) {
+                    $(this).closest("li").addClass("active");
+                }
+            });
+
+        });
+    </script>
+
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
@@ -194,7 +215,7 @@
                     <div class="pcoded-wrapper">
                         <nav class="pcoded-navbar">
                             <div class="sidebar_toggle"><a href="#"><i class="icon-close icons"></i></a></div>
-                            <div class="pcoded-inner-navbar main-menu">
+                            <div class="pcoded-inner-navbar main-menu" id="navbarSupportedContent">
                                 <%--<div class="">
                                 <div class="main-menu-header">
                                     <img class="img-40 img-radius" src="../TemplateFiles/assets/images/avatar-4.jpg" alt="User-Profile-Image">
@@ -467,9 +488,9 @@
                                                     <i class="icofont icofont-home"></i>
                                                 </a>
                                             </li>
-                                            <li class="breadcrumb-item"><a href="#!">Breadcrumb</a>
+                                            <li class="breadcrumb-item"><a href="Dashboard.aspx">Dashboard</a>
                                             </li>
-                                            <li class="breadcrumb-item"><a href="#!">Caption Breadcrumb</a>
+                                            <li class="breadcrumb-item"><a href="#!"><%Response.Write(Session["breadcrum"]); %></a>
                                             </li>
                                         </ul>
                                     </div>
@@ -487,7 +508,7 @@
 
     </form>
     <!-- Required Jquery -->
-    <script type="text/javascript" src="../TemplateFiles/assets/js/jquery/jquery.min.js"></script>
+    <%--<script type="text/javascript" src="../TemplateFiles/assets/js/jquery/jquery.min.js"></script>--%>
     <script type="text/javascript" src="../TemplateFiles/assets/js/jquery-ui/jquery-ui.min.js"></script>
     <script type="text/javascript" src="../TemplateFiles/assets/js/popper.js/popper.min.js"></script>
     <script type="text/javascript" src="../TemplateFiles/assets/js/bootstrap/js/bootstrap.min.js"></script>
@@ -519,6 +540,19 @@
             }
         });
 </script>
+    <script src="../TemplateFiles/assets/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="../TemplateFiles/assets/datatables/js/dataTables.bootstrap4.min.js"></script>
+    <script src="../TemplateFiles/assets/datatables/js/dataTables.responsive.min.js"></script>
+    <script src="../TemplateFiles/assets/datatables/js/responsive.bootstrap4.min.js"></script>
+
+    <script src="../TemplateFiles/assets/datatables/js/dataTables.buttons.min.js"></script>
+    <script src="../TemplateFiles/assets/datatables/js/buttons.bootstrap4.min.js"></script>
+    <script src="../TemplateFiles/assets/datatables/js/buttons.print.min.js"></script>
+    <script src="../TemplateFiles/assets/datatables/js/buttons.html5.min.js"></script>
+    <script src="../TemplateFiles/assets/datatables/js/buttons.flash.min.js"></script>
+    <script src="../TemplateFiles/assets/datatables/js/pdfmake.min.js"></script>
+    <script src="../TemplateFiles/assets/datatables/js/vfs_fonts.js"></script>
+    <script src="../TemplateFiles/assets/datatables/js/datatable-setting.js"></script>
 </body>
 </html>
 

@@ -70,6 +70,30 @@
     <Content Include="Admin\Category.aspx" />
     <Content Include="Admin\Dashboard.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="Images\No_image.jpg" />
+    <Content Include="TemplateFiles\assets\datatables\css\dataTables.bootstrap4.min.css" />
+    <Content Include="TemplateFiles\assets\datatables\css\icon-font.min.css" />
+    <Content Include="TemplateFiles\assets\datatables\css\jquery.dataTables.min.css" />
+    <Content Include="TemplateFiles\assets\datatables\css\responsive.bootstrap4.min.css" />
+    <Content Include="TemplateFiles\assets\datatables\css\responsive.dataTables.min.css" />
+    <Content Include="TemplateFiles\assets\datatables\images\sort_asc.png" />
+    <Content Include="TemplateFiles\assets\datatables\images\sort_asc_disabled.png" />
+    <Content Include="TemplateFiles\assets\datatables\images\sort_both.png" />
+    <Content Include="TemplateFiles\assets\datatables\images\sort_desc.png" />
+    <Content Include="TemplateFiles\assets\datatables\images\sort_desc_disabled.png" />
+    <Content Include="TemplateFiles\assets\datatables\js\buttons.bootstrap4.min.js" />
+    <Content Include="TemplateFiles\assets\datatables\js\buttons.flash.min.js" />
+    <Content Include="TemplateFiles\assets\datatables\js\buttons.html5.min.js" />
+    <Content Include="TemplateFiles\assets\datatables\js\buttons.print.min.js" />
+    <Content Include="TemplateFiles\assets\datatables\js\datatable-setting.js" />
+    <Content Include="TemplateFiles\assets\datatables\js\dataTables.bootstrap4.min.js" />
+    <Content Include="TemplateFiles\assets\datatables\js\dataTables.buttons.min.js" />
+    <Content Include="TemplateFiles\assets\datatables\js\dataTables.responsive.min.js" />
+    <Content Include="TemplateFiles\assets\datatables\js\jquery.dataTables.min.js" />
+    <Content Include="TemplateFiles\assets\datatables\js\jszip.min.js" />
+    <Content Include="TemplateFiles\assets\datatables\js\pdfmake.min.js" />
+    <Content Include="TemplateFiles\assets\datatables\js\responsive.bootstrap4.min.js" />
+    <Content Include="TemplateFiles\assets\datatables\js\vfs_fonts.js" />
     <Content Include="TemplateFiles\images\family-meals.jpg" />
     <Content Include="TemplateFiles\assets\css\animate.css\css\animate.css" />
     <Content Include="TemplateFiles\assets\css\bootstrap\css\bootstrap.min.css" />
@@ -188,7 +212,9 @@
     <Content Include="User\Blog.aspx" />
     <Content Include="User\Contact.aspx" />
     <Content Include="User\Default.aspx" />
+    <Content Include="User\Login.aspx" />
     <Content Include="User\Menu.aspx" />
+    <Content Include="User\Signup.aspx" />
     <Content Include="User\SliderUserControl1.ascx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -247,12 +273,26 @@
     <Compile Include="User\Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="User\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
     <Compile Include="User\Menu.aspx.cs">
       <DependentUpon>Menu.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="User\Menu.aspx.designer.cs">
       <DependentUpon>Menu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Signup.aspx.cs">
+      <DependentUpon>Signup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Signup.aspx.designer.cs">
+      <DependentUpon>Signup.aspx</DependentUpon>
     </Compile>
     <Compile Include="User\SliderUserControl1.ascx.cs">
       <DependentUpon>SliderUserControl1.ascx</DependentUpon>
@@ -284,6 +324,10 @@
     <Content Include="TemplateFiles\assets\icon\themify-icons\fonts\themify.eot" />
     <Content Include="TemplateFiles\assets\icon\themify-icons\fonts\themify.ttf" />
     <Content Include="TemplateFiles\assets\icon\themify-icons\fonts\themify.woff" />
+    <Content Include="TemplateFiles\assets\datatables\fonts\ionicons.ttf" />
+    <Content Include="TemplateFiles\assets\datatables\fonts\ionicons.woff" />
+    <Content Include="TemplateFiles\assets\datatables\fonts\themify.ttf" />
+    <Content Include="TemplateFiles\assets\datatables\fonts\themify.woff" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

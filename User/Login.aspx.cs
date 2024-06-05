@@ -5,16 +5,14 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace FOSCheezy.Admin
+namespace FOSCheezy.User
 {
-    public partial class Dashboard : System.Web.UI.Page
+    public partial class Login : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!IsPostBack) 
-            {
-                Session["breadcrum"] = " ";
-            }
+
         }
+
     }
 }
