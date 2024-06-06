@@ -223,6 +223,7 @@
     <Content Include="User\Default.aspx" />
     <Content Include="User\Login.aspx" />
     <Content Include="User\Menu.aspx" />
+    <Content Include="User\Registration.aspx" />
     <Content Include="User\Signup.aspx" />
     <Content Include="User\SliderUserControl1.ascx" />
     <Content Include="Web.config" />
@@ -303,6 +304,13 @@
     <Compile Include="User\Menu.aspx.designer.cs">
       <DependentUpon>Menu.aspx</DependentUpon>
     </Compile>
+    <Compile Include="User\Registration.aspx.cs">
+      <DependentUpon>Registration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Registration.aspx.designer.cs">
+      <DependentUpon>Registration.aspx</DependentUpon>
+    </Compile>
     <Compile Include="User\Signup.aspx.cs">
       <DependentUpon>Signup.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -355,6 +363,7 @@
     <Folder Include="App_Data\" />
     <Folder Include="Images\Category\" />
     <Folder Include="Images\Products\" />
+    <Folder Include="Images\User\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
