@@ -100,7 +100,7 @@
                                                                 </td>
                                                                 <td>
                                                                     <asp:Label ID="lblIsActive" runat="server" Text='<%# Eval("IsActive") %>'></asp:Label>
-                                                                    
+                                                                </td>
                                                                 <td><%# Eval("CreatedDate") %></td>
                                                                 <td>
                                                                     <asp:LinkButton ID="lnkEdit" Text="Edit" CssClass="badge badge-primary" runat="server" CommandArgument='<%# Eval("CategoryId") %>' CommandName="edit">
