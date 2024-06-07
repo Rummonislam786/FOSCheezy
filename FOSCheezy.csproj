@@ -70,8 +70,12 @@
     <Content Include="Admin\Category.aspx" />
     <Content Include="Admin\Dashboard.aspx" />
     <Content Include="Admin\Products.aspx" />
+    <Content Include="Admin\Users.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="Images\login_logo.png" />
+    <Content Include="Images\logo1.png" />
     <Content Include="Images\No_image.jpg" />
+    <Content Include="Images\short_logo1.png" />
     <Content Include="TemplateFiles\assets\datatables\css\dataTables.bootstrap4.min.css" />
     <Content Include="TemplateFiles\assets\datatables\css\icon-font.min.css" />
     <Content Include="TemplateFiles\assets\datatables\css\jquery.dataTables.min.css" />
@@ -223,6 +227,7 @@
     <Content Include="User\Default.aspx" />
     <Content Include="User\Login.aspx" />
     <Content Include="User\Menu.aspx" />
+    <Content Include="User\Profile.aspx" />
     <Content Include="User\Registration.aspx" />
     <Content Include="User\Signup.aspx" />
     <Content Include="User\SliderUserControl1.ascx" />
@@ -256,6 +261,13 @@
     </Compile>
     <Compile Include="Admin\Products.aspx.designer.cs">
       <DependentUpon>Products.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Users.aspx.cs">
+      <DependentUpon>Users.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Users.aspx.designer.cs">
+      <DependentUpon>Users.aspx</DependentUpon>
     </Compile>
     <Compile Include="Connection.cs" />
     <Compile Include="Global.asax.cs">
@@ -303,6 +315,13 @@
     </Compile>
     <Compile Include="User\Menu.aspx.designer.cs">
       <DependentUpon>Menu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Profile.aspx.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Profile.aspx.designer.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
     </Compile>
     <Compile Include="User\Registration.aspx.cs">
       <DependentUpon>Registration.aspx</DependentUpon>

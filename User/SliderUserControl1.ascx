@@ -6,35 +6,33 @@
             <div class="carousel-item active">
                 <div class="container ">
                     <div class="row">
-                        <div class="col-md-7 col-lg-6 ">
+                        <div class="col-12 text-center">
                             <div class="detail-box">
-                                <h1>Eat With Your Heart Desire</h1>
-                                <p>
-                                    Doloremque, itaque aperiam facilis rerum, commodi, temporibus sapiente ad mollitia laborum quam quisquam esse error unde. Tempora ex doloremque, labore, sunt repellat dolore, iste magni quos nihil ducimus libero ipsam.
+                                <h1>Welcome to the Food Ordering System</h1>
+                                <p style="font-family:Helvetica">
+                                    A food ordering system revolutionizes the dining experience, offering convenience and efficiency to both customers and restaurants. With just a few taps on a smartphone or clicks on a website, patrons can browse diverse menus, customize their orders, and securely complete transactions. This seamless process eliminates long queues and reduces wait times, enhancing overall satisfaction.
        
                                 </p>
-                                <div class="btn-box">
-                                    <a href="" class="btn1">Order Now
-          </a>
-                                </div>
+                                <%--<div class="btn-box">
+                                    <a href="" class="btn1">Order Now</a>
+                                </div>--%>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="carousel-item ">
+            <%--<div class="carousel-item ">
                 <div class="container ">
                     <div class="row">
                         <div class="col-md-7 col-lg-6 ">
                             <div class="detail-box">
-                                <h1>Food So Good, Guaranteed You'll Come 2nd Time</h1>
-                                <p>
-                                    Doloremque, itaque aperiam facilis rerum, commodi, temporibus sapiente ad mollitia laborum quam quisquam esse error unde. Tempora ex doloremque, labore, sunt repellat dolore, iste magni quos nihil ducimus libero ipsam.
+                                <h1>Welcome to the <br>Food Ordering System</h1>
+                                <p style="font-family:Helvetica">
+                                    For restaurants, implementing a food ordering system streamlines operations, optimizes resource allocation, and expands their reach to a broader customer base. Automated order management minimizes errors, improves order accuracy, and facilitates faster order processing. With real-time data analytics, establishments gain valuable insights into customer preferences, enabling targeted marketing strategies and menu optimizations.
        
                                 </p>
                                 <div class="btn-box">
-                                    <a href="" class="btn1">Order Now
-          </a>
+                                    <a href="" class="btn1">Order Now</a>
                                 </div>
                             </div>
                         </div>
@@ -46,10 +44,9 @@
                     <div class="row">
                         <div class="col-md-7 col-lg-6 ">
                             <div class="detail-box">
-                                <h1>Now At Your DoorStep Via Our Own App
-        </h1>
-                                <p>
-                                    Doloremque, itaque aperiam facilis rerum, commodi, temporibus sapiente ad mollitia laborum quam quisquam esse error unde. Tempora ex doloremque, labore, sunt repellat dolore, iste magni quos nihil ducimus libero ipsam.
+             <h1>Welcome to the <br>Food Ordering System</h1>
+                                <p style="font-family:Helvetica">
+                                    Moreover, food ordering systems foster a contactless dining experience, particularly relevant in today's health-conscious environment. Customers can choose between delivery or pickup options, adhering to their preferences and safety concerns. These systems also support sustainability initiatives by minimizing paper usage through digital menus and receipts, aligning with eco-friendly practices while enhancing the overall dining experience.
        
                                 </p>
                                 <div class="btn-box">
@@ -60,14 +57,14 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>--%>
         </div>
         <div class="container">
-            <ol class="carousel-indicators">
+            <%--<ol class="carousel-indicators">
                 <li data-target="#customCarousel1" data-slide-to="0" class="active"></li>
                 <li data-target="#customCarousel1" data-slide-to="1"></li>
                 <li data-target="#customCarousel1" data-slide-to="2"></li>
-            </ol>
+            </ol>--%>
         </div>
     </div>
 

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
+using System.Web.UI.HtmlControls;
 using System.Web.UI.WebControls;
 
 namespace FOSCheezy.User
@@ -22,6 +23,41 @@ namespace FOSCheezy.User
                 Control sliderUserControl = (Control)Page.LoadControl("SliderUserControl1.ascx");
 
                 pnlSliderUC.Controls.Add(sliderUserControl);
+            }
+            if (Session["userId"] !=null)
+            {
+                Label1.Visible= false;
+                lblLoginorLogout.Visible=true;
+            }
+            else
+            {
+                //lblLoginorLogout.Text = "Login";
+                Label1.Visible = true;
+                lblLoginorLogout.Visible=false;
+
+            }
+        }
+
+        protected void lblLoginorLogout_Click(object sender, EventArgs e)
+        {
+            if (Session["userId"] != null)
+            {
+                Session.Abandon();
+                Response.Redirect("Login.aspx");       
+            }
+        }
+
+        protected void lbRegisterOrProfile_Click(object sender, EventArgs e)
+        {
+            if (Session["userId"] != null) 
+            {
+                lbRegisterOrProfile.ToolTip = "User Profile";
+                Response.Redirect("Profile.aspx");
+            }
+            else
+            {
+                lbRegisterOrProfile.ToolTip = "User Registration";
+                Response.Redirect("Registration.aspx");
             }
         }
     }

@@ -21,7 +21,15 @@ namespace FOSCheezy.Admin
             if (!IsPostBack)
             {
                 Session["breadCrum"] = "Products";
-                getProducts();
+                if (Session["admin"] == null)
+                {
+                    Response.Redirect("../User/Login.aspx");
+                }
+                else
+                {
+                    getProducts();
+                }
+                
             }
             lblMsg.Visible = false;
         }

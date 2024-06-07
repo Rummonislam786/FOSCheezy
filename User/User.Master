@@ -18,7 +18,7 @@
     <meta name="author" content="" />
     <link rel="shortcut icon" href="../TemplateFiles/images/favicon.png" type="">
 
-    <title>CHEEZY </title>
+    <title>CHEEZY Food Ordering System</title>
 
     <!-- bootstrap core css -->
     <link rel="stylesheet" type="text/css" href="../TemplateFiles/css/bootstrap.css" />
@@ -64,9 +64,10 @@
             <header class="header_section">
                 <div class="container">
                     <nav class="navbar navbar-expand-lg custom_nav-container ">
-                        <a class="navbar-brand" href="Default.aspx">
-                            <span>Cheezy
-            </span>
+
+                        <a class="navbar-brand" style="font-family: Monotype Corsiva" href="Default.aspx">
+                            <img src="../Images/short_logo1.png" alt="logo" height="30" width="30" />
+                            <span>Cheezy</span>
                         </a>
 
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -78,6 +79,9 @@
                                 <li class="nav-item">
                                     <a class="nav-link" href="Default.aspx">Home</a>
                                 </li>
+                                <asp:Label ID="Label1" runat="server" Text="Label"><li class="nav-item" id="loginid">
+                                    <a class="nav-link" href="Login.aspx">Sign-in</a>
+                                </li></asp:Label>
                                 <li class="nav-item">
                                     <a class="nav-link" href="Menu.aspx">Menu</a>
                                 </li>
@@ -88,13 +92,16 @@
                                     <a class="nav-link" href="Contact.aspx">Contact</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="Blog.aspx">Blog</a> 
+                                    <a class="nav-link" href="Blog.aspx">Blog</a>
                                 </li>
                             </ul>
                             <div class="user_option">
-                                <a href="" class="user_link">
+                                <asp:LinkButton ID="lbRegisterOrProfile" runat="server" OnClick="lbRegisterOrProfile_Click" CausesValidation="false">
                                     <i class="fa fa-user" aria-hidden="true"></i>
-                                </a>
+                                </asp:LinkButton>
+                                <%--<a href="" class="user_link">
+                                    <i class="fa fa-user" aria-hidden="true"></i>
+                                </a>--%>
                                 <a class="cart_link" href="#">
                                     <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background: new 0 0 456.029 456.029;" xml:space="preserve">
                                         <g>
@@ -154,8 +161,10 @@
                                         <i class="fa fa-search" aria-hidden="true"></i>
                                     </button>
                                 </div>
-                                <a href="Login.aspx" class="order_online">Login
-              </a>
+                                <%-- <a href="Login.aspx" class="order_online">Login
+              </a>--%>
+                                <asp:LinkButton ID="lblLoginorLogout" runat="server" CssClass="order_online" CausesValidation="false"
+                                    OnClick="lblLoginorLogout_Click" Visible="false">Logout</asp:LinkButton>
                             </div>
                         </div>
                     </nav>
@@ -168,7 +177,7 @@
             <!-- end slider section -->
         </div>
 
-         <!-- ASP start -->
+        <!-- ASP start -->
 
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
         </asp:ContentPlaceHolder>
@@ -182,22 +191,22 @@
                     <div class="col-md-4 footer-col">
                         <div class="footer_contact">
                             <h4>Contact Us
-            </h4>
+                            </h4>
                             <div class="contact_link_box">
                                 <a href="">
                                     <i class="fa fa-map-marker" aria-hidden="true"></i>
                                     <span>Location
-                </span>
+                                    </span>
                                 </a>
                                 <a href="">
                                     <i class="fa fa-phone" aria-hidden="true"></i>
                                     <span>Call +01 1234567890
-                </span>
+                                    </span>
                                 </a>
                                 <a href="">
                                     <i class="fa fa-envelope" aria-hidden="true"></i>
                                     <span>demo@gmail.com
-                </span>
+                                    </span>
                                 </a>
                             </div>
                         </div>
@@ -205,7 +214,7 @@
                     <div class="col-md-4 footer-col">
                         <div class="footer_detail">
                             <a href="" class="footer-logo">Cheezy
-            </a>
+                            </a>
                             <p>
                                 Necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with
            
@@ -231,7 +240,7 @@
                     </div>
                     <div class="col-md-4 footer-col">
                         <h4>Opening Hours
-          </h4>
+                        </h4>
                         <p>
                             Everyday
          
@@ -260,25 +269,25 @@
     </form>
 
     <!-- jQery -->
-  <%--<script src="../TemplateFiles/js/jquery-3.4.1.min.js"></script>--%>
-  <!-- popper js -->
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-  </script>
-  <!-- bootstrap js -->
-  <script src="../TemplateFiles/js/bootstrap.js"></script>
-  <!-- owl slider -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
-  </script>
-  <!-- isotope js -->
-  <script src="https://unpkg.com/isotope-layout@3.0.4/dist/isotope.pkgd.min.js"></script>
-  <!-- nice select -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
-  <!-- custom js -->
-  <script src="../TemplateFiles/js/custom.js"></script>
-  <!-- Google Map -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
-  </script>
-  <!-- End Google Map -->
+    <%--<script src="../TemplateFiles/js/jquery-3.4.1.min.js"></script>--%>
+    <!-- popper js -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <!-- bootstrap js -->
+    <script src="../TemplateFiles/js/bootstrap.js"></script>
+    <!-- owl slider -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+    </script>
+    <!-- isotope js -->
+    <script src="https://unpkg.com/isotope-layout@3.0.4/dist/isotope.pkgd.min.js"></script>
+    <!-- nice select -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
+    <!-- custom js -->
+    <script src="../TemplateFiles/js/custom.js"></script>
+    <!-- Google Map -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
+    </script>
+    <!-- End Google Map -->
 
 </body>
 

@@ -30,7 +30,7 @@
                 <div class="align-self-end">
                     <asp:Label ID="lblMsg" Visible="false" runat="server"></asp:Label>
                 </div>
-                    <asp:Label ID="lblHeaderMsg" Text="<h2>User Registration</h2>" Visible="false" 
+                    <asp:Label ID="lblHeaderMsg" Text="<h2>User Registration</h2>" 
                         runat="server"></asp:Label>
             </div>
             <div class="row">

@@ -13,7 +13,11 @@ namespace FOSCheezy.Admin
         {
             if (!IsPostBack) 
             {
-                Session["breadcrum"] = " ";
+                Session["breadcrum"] = "";
+                if (Session["admin"] == null)
+                {
+                    Response.Redirect("../User/Login.aspx");
+                }
             }
         }
     }

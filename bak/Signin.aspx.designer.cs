@@ -11,7 +11,7 @@ namespace FOSCheezy.User
 {
 
 
-    public partial class Blog
+    public partial class Signin
     {
     }
 }
