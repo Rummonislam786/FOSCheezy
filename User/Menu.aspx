@@ -24,7 +24,7 @@
                             data-id="<%# Eval("CategoryId") %>"><%# Eval("Name") %></li>
                     </ItemTemplate>
                 </asp:Repeater>
-                <li data-filter=".Pizza">Pizza</li>
+
                 
             </ul>
 

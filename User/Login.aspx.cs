@@ -24,7 +24,7 @@ namespace FOSCheezy.User
 
         protected void btnLogin_Click(object sender, EventArgs e)
         {
-            if (txtUsername.Text.Trim() == "Admin" && txtPassword.Text.Trim() == "1234")
+            if (txtUsername.Text.Trim().ToLower() == "admin" && txtPassword.Text.Trim() == "1234")
             {
                 Session["admin"] = txtUsername.Text.Trim();
                 Response.Redirect("../Admin/Dashboard.aspx");

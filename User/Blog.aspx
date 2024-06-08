@@ -2,6 +2,7 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style>
+        
         .card {
             max-width: 500px;
             margin: 0 auto;
@@ -434,120 +435,114 @@
             .yellow:nth-child(2n)::before {
                 background-image: linear-gradient( 80deg, $main-yellow-rgb-015, transparent 50% );
             }
+
+        }
+        .someArticles{
+            transition: transform 0.3s ease;
         }
     </style>
-    <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const section = document.querySelector('.someArticles');
-        const toggleButton = document.getElementById('btnShowBlog');
-
-        toggleButton.addEventListener('click', function() {
-            if (section.style.display === 'none') {
-                section.style.display = 'block';
-                console.log("h2");
-            } else {
-                section.style.display = 'none';
-                console.log("h1");
-            }
-        });
-    });
-</script>
+    
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    
+
     <section class="book_section layout_padding" id="bookSection">
         <div class="container">
-            
-            <div class="heading_container">
-                <h2>Blog</h2>
-            </div>
+
+
             <div>
-                <Button ID="btnShowBlog" >Show Blog
-                </Button>
+                <div class="heading_container">
+                    <h2>Blog</h2>
+                </div>
+                <div>
+                    <asp:LinkButton ID="lbBlog" runat="server" CssClass="btn btn-primary" OnClick="lbBlog_Click">Show Blog</asp:LinkButton>
+                </div>
+                <hr />
+                <!-- this will be hidden --->
+                <asp:Panel ID="Panel1" runat="server" Visible="false" CssClass="someArticles">
+                    <div>
+                        <article class="postcard dark blue">
+                            <a class="postcard__img_link" href="#">
+                                <img class="postcard__img" src="../TemplateFiles/images/award.jpg" alt="Image Title" />
+                            </a>
+                            <div class="postcard__text">
+                                <h1 class="postcard__title blue"><a href="#">The Employee of The Year Award Ceremony</a></h1>
+                                <div class="postcard__subtitle small">
+                                    <time datetime="2020-05-25 12:00:00">
+                                        <i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
+                                    </time>
+                                </div>
+                                <div class="postcard__bar"></div>
+                                <div class="postcard__preview-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!</div>
+                                <ul class="postcard__tagbox">
+                                    <li class="tag__item"><i class="fas fa-tag mr-2"></i>Award</li>
+                                    <li class="tag__item"><i class="fas fa-clock mr-2"></i>55 mins.</li>
+                                </ul>
+                            </div>
+                        </article>
+                        <article class="postcard dark red">
+                            <a class="postcard__img_link" href="#">
+                                <img class="postcard__img" src="../TemplateFiles/images/award2.jpg" alt="Image Title" />
+                            </a>
+                            <div class="postcard__text">
+                                <h1 class="postcard__title red"><a href="#">Best Brand Award Ceremony</a></h1>
+                                <div class="postcard__subtitle small">
+                                    <time datetime="2020-05-25 12:00:00">
+                                        <i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
+                                    </time>
+                                </div>
+                                <div class="postcard__bar"></div>
+                                <div class="postcard__preview-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!</div>
+                                <ul class="postcard__tagbox">
+                                    <li class="tag__item"><i class="fas fa-tag mr-2"></i>Award</li>
+                                    <li class="tag__item"><i class="fas fa-clock mr-2"></i>55 mins.</li>
+
+                                </ul>
+                            </div>
+                        </article>
+                        <article class="postcard dark blue">
+                            <a class="postcard__img_link" href="#">
+                                <img class="postcard__img" src="../TemplateFiles/images/family-meals.jpg" alt="Image Title" />
+                            </a>
+                            <div class="postcard__text">
+                                <h1 class="postcard__title blue"><a href="#">Does eating breakfast with your family helps you set the mood for the day?</a></h1>
+                                <div class="postcard__subtitle small">
+                                    <time datetime="2020-05-25 12:00:00">
+                                        <i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
+                                    </time>
+                                </div>
+                                <div class="postcard__bar"></div>
+                                <div class="postcard__preview-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!</div>
+                                <ul class="postcard__tagbox">
+                                    <li class="tag__item"><i class="fas fa-tag mr-2"></i>Award</li>
+
+                                </ul>
+                            </div>
+                        </article>
+                        <article class="postcard dark red">
+                            <a class="postcard__img_link" href="#">
+                                <img class="postcard__img" src="../TemplateFiles/images/o1.jpg" alt="Image Title" />
+                            </a>
+                            <div class="postcard__text">
+                                <h1 class="postcard__title red"><a href="#">10% Discount Voucher</a></h1>
+                                <div class="postcard__subtitle small">
+                                    <time datetime="2020-05-25 12:00:00">
+                                        <i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
+                                    </time>
+                                </div>
+                                <div class="postcard__bar"></div>
+                                <div class="postcard__preview-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!</div>
+                                <ul class="postcard__tagbox">
+                                    <li class="tag__item"><i class="fas fa-tag mr-2"></i>Food</li>
+
+
+                                </ul>
+                            </div>
+
+                        </article>
+                    </div>
+                </asp:Panel>
             </div>
-            
-            <div class="someArticles">
-                <article class="postcard dark blue">
-                <a class="postcard__img_link" href="#">
-                    <img class="postcard__img" src="../TemplateFiles/images/award.jpg" alt="Image Title" />
-                </a>
-                <div class="postcard__text">
-                    <h1 class="postcard__title blue"><a href="#">The Employee of The Year Award Ceremony</a></h1>
-                    <div class="postcard__subtitle small">
-                        <time datetime="2020-05-25 12:00:00">
-                            <i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
-                        </time>
-                    </div>
-                    <div class="postcard__bar"></div>
-                    <div class="postcard__preview-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!</div>
-                    <ul class="postcard__tagbox">
-                        <li class="tag__item"><i class="fas fa-tag mr-2"></i>Award</li>
-                        <li class="tag__item"><i class="fas fa-clock mr-2"></i>55 mins.</li>
-                    </ul>
-                </div>
-            </article>
-            <article class="postcard dark red">
-                <a class="postcard__img_link" href="#">
-                    <img class="postcard__img" src="../TemplateFiles/images/award2.jpg" alt="Image Title" />
-                </a>
-                <div class="postcard__text">
-                    <h1 class="postcard__title red"><a href="#">Best Brand Award Ceremony</a></h1>
-                    <div class="postcard__subtitle small">
-                        <time datetime="2020-05-25 12:00:00">
-                            <i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
-                        </time>
-                    </div>
-                    <div class="postcard__bar"></div>
-                    <div class="postcard__preview-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!</div>
-                    <ul class="postcard__tagbox">
-                        <li class="tag__item"><i class="fas fa-tag mr-2"></i>Award</li>
-                        <li class="tag__item"><i class="fas fa-clock mr-2"></i>55 mins.</li>
-
-                    </ul>
-                </div>
-            </article>
-            <article class="postcard dark blue">
-                <a class="postcard__img_link" href="#">
-                    <img class="postcard__img" src="../TemplateFiles/images/family-meals.jpg" alt="Image Title" />
-                </a>
-                <div class="postcard__text">
-                    <h1 class="postcard__title blue"><a href="#">Does eating breakfast with your family helps you set the mood for the day?</a></h1>
-                    <div class="postcard__subtitle small">
-                        <time datetime="2020-05-25 12:00:00">
-                            <i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
-                        </time>
-                    </div>
-                    <div class="postcard__bar"></div>
-                    <div class="postcard__preview-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!</div>
-                    <ul class="postcard__tagbox">
-                        <li class="tag__item"><i class="fas fa-tag mr-2"></i>Award</li>
-
-                    </ul>
-                </div>
-            </article>
-            <article class="postcard dark red">
-                <a class="postcard__img_link" href="#">
-                    <img class="postcard__img" src="../TemplateFiles/images/o1.jpg" alt="Image Title" />
-                </a>
-                <div class="postcard__text">
-                    <h1 class="postcard__title red"><a href="#">10% Discount Voucher</a></h1>
-                    <div class="postcard__subtitle small">
-                        <time datetime="2020-05-25 12:00:00">
-                            <i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
-                        </time>
-                    </div>
-                    <div class="postcard__bar"></div>
-                    <div class="postcard__preview-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!</div>
-                    <ul class="postcard__tagbox">
-                        <li class="tag__item"><i class="fas fa-tag mr-2"></i>Food</li>
-
-
-                    </ul>
-                </div>
-            </article>
-            </div>
-            
         </div>
     </section>
-    
+
 </asp:Content>

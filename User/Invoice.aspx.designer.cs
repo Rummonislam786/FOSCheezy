@@ -11,25 +11,34 @@ namespace FOSCheezy.User
 {
 
 
-    public partial class Blog
+    public partial class Invoice
     {
 
         /// <summary>
-        /// lbBlog control.
+        /// lblMsg control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton lbBlog;
+        protected global::System.Web.UI.WebControls.Label lblMsg;
 
         /// <summary>
-        /// Panel1 control.
+        /// rOrderItem control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel Panel1;
+        protected global::System.Web.UI.WebControls.Repeater rOrderItem;
+
+        /// <summary>
+        /// lbDownloadInvoice control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton lbDownloadInvoice;
     }
 }

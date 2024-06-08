@@ -14,9 +14,19 @@ namespace FOSCheezy.User
 
         }
 
-        protected void btnShowBlog_Click(object sender, EventArgs e)
+        
+
+        protected void lbBlog_Click(object sender, EventArgs e)
         {
-            
+            if (Panel1.Visible == false)
+            {
+                Panel1.Visible = true;
+            }
+            else
+            {
+                Panel1.Visible = false;
+
+            }
         }
     }
 }
