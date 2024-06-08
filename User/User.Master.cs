@@ -28,12 +28,16 @@ namespace FOSCheezy.User
             {
                 Label1.Visible= false;
                 lblLoginorLogout.Visible=true;
+                Utils utils = new Utils();
+                Session["cartCount"] = utils.cartCount(Convert.ToInt32(Session["userId"])).ToString();
+
             }
             else
             {
                 //lblLoginorLogout.Text = "Login";
                 Label1.Visible = true;
                 lblLoginorLogout.Visible=false;
+                Session["cartCount"] = "0";
 
             }
         }

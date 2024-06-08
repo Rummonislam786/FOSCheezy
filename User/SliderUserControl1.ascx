@@ -6,12 +6,11 @@
             <div class="carousel-item active">
                 <div class="container ">
                     <div class="row">
-                        <div class="col-12 text-center">
+                        <div class="col-12 text-center align-items-center">
                             <div class="detail-box">
                                 <h1>Welcome to the Food Ordering System</h1>
                                 <p style="font-family:Helvetica">
                                     A food ordering system revolutionizes the dining experience, offering convenience and efficiency to both customers and restaurants. With just a few taps on a smartphone or clicks on a website, patrons can browse diverse menus, customize their orders, and securely complete transactions. This seamless process eliminates long queues and reduces wait times, enhancing overall satisfaction.
-       
                                 </p>
                                 <%--<div class="btn-box">
                                     <a href="" class="btn1">Order Now</a>

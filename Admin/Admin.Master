@@ -37,7 +37,11 @@
     <script type="text/javascript" src="../TemplateFiles/assets/js/jquery/jquery.min.js"></script>
     
 
-
+    <style>
+        .navbar-wrapper {
+            transition: transform 0.3s ease;
+        }
+    </style>
 
     <script>
         $(function () {
@@ -110,9 +114,10 @@
                             <%-- <a class="mobile-search morphsearch-search" href="#">
                             <i class="ti-search"></i>
                         </a>--%>
-                            <a href="index.html">
-                                <img class="img-fluid" src="../TemplateFiles/images/logo.png" alt="Theme-Logo" />
-                            </a>
+                           <a class="navbar-brand" style="font-family: Monotype Corsiva" href="Default.aspx">
+                            <img src="../Images/short_logo1.png" alt="logo" height="30" width="30" />
+                            <span>Cheezy</span>
+                        </a>
                             <a class="mobile-options">
                                 <i class="ti-more"></i>
                             </a>

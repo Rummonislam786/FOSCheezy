@@ -223,13 +223,14 @@
     <Content Include="TemplateFiles\js\jquery-3.4.1.min.js" />
     <Content Include="User\About.aspx" />
     <Content Include="User\Blog.aspx" />
+    <Content Include="User\Cart.aspx" />
     <Content Include="User\Contact.aspx" />
     <Content Include="User\Default.aspx" />
     <Content Include="User\Login.aspx" />
     <Content Include="User\Menu.aspx" />
+    <Content Include="User\Payment.aspx" />
     <Content Include="User\Profile.aspx" />
     <Content Include="User\Registration.aspx" />
-    <Content Include="User\Signup.aspx" />
     <Content Include="User\SliderUserControl1.ascx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -288,6 +289,13 @@
     <Compile Include="User\Blog.aspx.designer.cs">
       <DependentUpon>Blog.aspx</DependentUpon>
     </Compile>
+    <Compile Include="User\Cart.aspx.cs">
+      <DependentUpon>Cart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Cart.aspx.designer.cs">
+      <DependentUpon>Cart.aspx</DependentUpon>
+    </Compile>
     <Compile Include="User\Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -316,6 +324,13 @@
     <Compile Include="User\Menu.aspx.designer.cs">
       <DependentUpon>Menu.aspx</DependentUpon>
     </Compile>
+    <Compile Include="User\Payment.aspx.cs">
+      <DependentUpon>Payment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Payment.aspx.designer.cs">
+      <DependentUpon>Payment.aspx</DependentUpon>
+    </Compile>
     <Compile Include="User\Profile.aspx.cs">
       <DependentUpon>Profile.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -329,13 +344,6 @@
     </Compile>
     <Compile Include="User\Registration.aspx.designer.cs">
       <DependentUpon>Registration.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="User\Signup.aspx.cs">
-      <DependentUpon>Signup.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="User\Signup.aspx.designer.cs">
-      <DependentUpon>Signup.aspx</DependentUpon>
     </Compile>
     <Compile Include="User\SliderUserControl1.ascx.cs">
       <DependentUpon>SliderUserControl1.ascx</DependentUpon>
@@ -380,6 +388,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="bak\" />
     <Folder Include="Images\Category\" />
     <Folder Include="Images\Products\" />
     <Folder Include="Images\User\" />
